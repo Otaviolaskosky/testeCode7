@@ -8,6 +8,8 @@ class devedores extends funcoesGlobais {
     /**
      * Função para inserção, edição e exclusão do deividas:
      * 
+     * Está função é usada para incluir, editar e excluir dividas:
+     * 
      * @return type
      */
     public function registraFormularioDividas() {
@@ -105,6 +107,8 @@ class devedores extends funcoesGlobais {
     /**
      * Função para consultar dívidas no Banco de Dados MongoDB
      * 
+     * Esta função é usada na lista de devedores e de dívidas e na tela de edição de dívidas.
+     * 
      * @param type $agruparCliente
      * @param type $idCliente
      * @param type $idDivida
@@ -127,6 +131,7 @@ class devedores extends funcoesGlobais {
 
         $listaClientesAPI = $this->consultaClientesAPI();
 
+        //A variável $i é usada no caso quando for para lista de dívidas. Neste caso é feito um array para adicionar.
         $i = 0;
         foreach ($rows as $document) {
             $document = get_object_vars($document);
@@ -159,27 +164,6 @@ class devedores extends funcoesGlobais {
         if (isset($dados)) {
             return $dados;
         }
-    }
-
-    public function formataMascara($val, $mask) {
-
-        $maskared = '';
-        $k = 0;
-        $val = strrev($val);
-        $mask = strrev($mask);
-
-        for ($i = 0; $i <= strlen($mask) - 1; $i++) {
-            if ($mask[$i] == '#') {
-                if (isset($val[$k]))
-                    $maskared .= $val[$k++];
-            }
-            else {
-                if (isset($mask[$i]))
-                    $maskared .= $mask[$i];
-            }
-        }
-        $maskared = strrev($maskared);
-        return $maskared;
     }
 
 }
