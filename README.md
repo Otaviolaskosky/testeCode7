@@ -1,5 +1,5 @@
 - <b>ATENÇÃO</b>: 
-  - Este projeto foi desenvolvido em PHP e mongoDb local;
+  - Este projeto foi desenvolvido em PHP 7.4 e mongoDb local;
   - Para alterar as configurações do mongoDb altere no arquivo variaveisMongoDB.
 
 - Na pasta Videos contém gravações de cada operação desenvolvida neste projeto.
