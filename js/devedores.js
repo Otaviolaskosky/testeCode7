@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     $(".valor").maskMoney({prefix: "R$ ", decimal: ",", thousands: "."});
 
-    $('#linkExclusaoDevedor').on('click', function () {
+    $('.linkExclusaoDevedor').on('click', function () {
 
         var idCliente = $(this).attr('idCliente');
 
@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     });
 
-    $('#linkExclusaoDivida').on('click', function () { 
+    $('.linkExclusaoDivida').on('click', function () { 
 
         var idDivida = $(this).attr('idDivida');
 

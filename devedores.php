@@ -65,7 +65,7 @@ $devedores = $classeDevedores->consultaDividasBD();
                                                         <tr>
                                                             <td><a href="devedoresDetalhes.php?idCliente=<?php echo $devedor['cliente'] ?>"><?php echo $devedor['nomeCliente'] ?></a></td>
                                                             <td style="text-align: center;margin: auto">
-                                                                <a  href="#" id="linkExclusaoDevedor" data-toggle="modal" data-target="#deletaDevedorModal" idCliente="<?php echo $devedor['cliente'] ?>">
+                                                                <a  href="#" class="linkExclusaoDevedor" data-toggle="modal" data-target="#deletaDevedorModal" idCliente="<?php echo $devedor['cliente'] ?>">
                                                                     <img src="img/delete.png" width="30%" >
                                                                 </a>
                                                             </td>
@@ -98,7 +98,7 @@ $devedores = $classeDevedores->consultaDividasBD();
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Deletar Divida</h5>
+                                <h5 class="modal-title">Deletar Devedor</h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">×</span>
                                 </button>

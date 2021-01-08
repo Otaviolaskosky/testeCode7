@@ -76,7 +76,7 @@ $dividas = $classeDevedores->consultaDividasBD(null, $idCliente);
 
                                                             <td style="text-align: center;margin: auto"><a href="dividasDevedoresCadastro.php?idDivida=<?php echo $divida['_id'] ?>"><img src="img/editar.png" width="40%" ></a></td>
                                                             <td style="text-align: center;margin: auto">
-                                                                <a  href="#" id="linkExclusaoDivida" data-toggle="modal" data-target="#deletaDividaModal" idDivida="<?php echo $divida['_id'] ?>">
+                                                                <a  href="#" class="linkExclusaoDivida" data-toggle="modal" data-target="#deletaDividaModal" idDivida="<?php echo $divida['_id'] ?>">
                                                                     <img src="img/delete.png" width="30%" >
                                                                 </a>
                                                             </td>
